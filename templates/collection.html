@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <div class="container">
+    <p class="eyebrow">Collection</p>
+    <h1>{{ collection.name }}</h1>
+    <p>{{ site.collections_intro }}</p>
+    <div class="card-grid">
+      {% for product in collection.products %}
+      <article class="card">
+        <img src="{{ product.images[0] }}" alt="{{ product.title }}" loading="lazy">
+        <div class="card-body">
+          <p class="eyebrow">{{ product.stock_status|replace('_', ' ')|title }}</p>
+          <h2><a href="{{ root_prefix }}products/{{ product.slug }}/index.html">{{ product.title }}</a></h2>
+          <p>{{ product.short_description }}</p>
+          <div class="card-meta">
+            <strong>${{ '%.2f'|format(product.price_usd) }}</strong>
+            <span>Pay with crypto</span>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

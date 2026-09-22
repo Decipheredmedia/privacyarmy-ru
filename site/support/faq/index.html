@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Support FAQ | PrivacyArmy</title>
+    <meta name="description" content="Answers about PrivacyArmy checkout, crypto payments, fulfillment, and custom device support.">
+    <link rel="canonical" href="https://privacyarmy.example.com/support/faq/index.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Support FAQ | PrivacyArmy">
+    <meta property="og:description" content="Answers about PrivacyArmy checkout, crypto payments, fulfillment, and custom device support.">
+    <meta property="og:url" content="https://privacyarmy.example.com/support/faq/index.html">
+    <meta property="og:site_name" content="PrivacyArmy">
+<meta property="og:image" content="https://privacyarmy.example.com/assets/privacyarmy-logo.svg">    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Support FAQ | PrivacyArmy">
+    <meta name="twitter:description" content="Answers about PrivacyArmy checkout, crypto payments, fulfillment, and custom device support.">
+<meta name="twitter:image" content="https://privacyarmy.example.com/assets/privacyarmy-logo.svg">    <link rel="stylesheet" href="../../assets/styles.css">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "PrivacyArmy", "url": "https://privacyarmy.example.com", "logo": "https://privacyarmy.example.com/assets/privacyarmy-logo.svg", "sameAs": ["https://x.com/privacyarmy", "https://t.me/privacyarmy", "https://github.com/Decipheredmedia/privacyarmy-ru"], "contactPoint": [{"@type": "ContactPoint", "contactType": "customer support", "email": "support@example.com"}]}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "WebSite", "name": "PrivacyArmy", "url": "https://privacyarmy.example.com", "description": "PrivacyArmy offers privacy-focused smartphones, rooted and jailbroken devices, and device-hardening services with crypto checkout via NOWPayments.", "potentialAction": {"@type": "SearchAction", "target": "https://privacyarmy.example.com/collections/index.html"}}</script>
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does checkout work?", "acceptedAnswer": {"@type": "Answer", "text": "PrivacyArmy uses NOWPayments hosted crypto checkout only. You choose a product, enter your email, and get redirected to a secure crypto invoice page."}}, {"@type": "Question", "name": "Do you accept fiat cards or PayPal?", "acceptedAnswer": {"@type": "Answer", "text": "No. This scaffold is intentionally crypto-only and routes payment through NOWPayments without Stripe, PayPal, or other processors."}}, {"@type": "Question", "name": "What happens after payment confirmation?", "acceptedAnswer": {"@type": "Answer", "text": "The order is updated by the NOWPayments IPN callback, the customer receives a confirmation email, and the admin gets a fulfillment notice."}}, {"@type": "Question", "name": "Can I request a custom device hardening package?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Use the support form to outline your device model, goals, and region, and PrivacyArmy can scope a custom engagement."}}]}</script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="../../index.html">PrivacyArmy</a>
+        <nav class="nav">
+          <a href="../../index.html">Home</a>
+          <a href="../../collections/index.html">Collections</a>
+          <a href="../../blog/index.html">Blog</a>
+          <a href="../../support/faq/index.html">Support</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+<section class="section">
+  <div class="container two-column support-layout">
+    <div>
+      <p class="eyebrow">Support</p>
+      <h1>Frequently asked questions</h1>
+      <div class="faq-widget" data-faq-root></div>
+      <script type="application/json" id="faq-data">[{"question": "How does checkout work?", "answer": "PrivacyArmy uses NOWPayments hosted crypto checkout only. You choose a product, enter your email, and get redirected to a secure crypto invoice page."}, {"question": "Do you accept fiat cards or PayPal?", "answer": "No. This scaffold is intentionally crypto-only and routes payment through NOWPayments without Stripe, PayPal, or other processors."}, {"question": "What happens after payment confirmation?", "answer": "The order is updated by the NOWPayments IPN callback, the customer receives a confirmation email, and the admin gets a fulfillment notice."}, {"question": "Can I request a custom device hardening package?", "answer": "Yes. Use the support form to outline your device model, goals, and region, and PrivacyArmy can scope a custom engagement."}]</script>
+    </div>
+    <div>
+      <div class="panel">
+        <h2>Need help?</h2>
+        <p>Use the contact form below to email the support inbox directly.</p>
+        <form action="/support/ticket.php" method="post" class="support-form">
+          <label>
+            Your email
+            <input type="email" name="customer_email" required placeholder="you@example.com">
+          </label>
+          <label>
+            Subject
+            <input type="text" name="subject" required placeholder="Order question">
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="6" required placeholder="How can we help?"></textarea>
+          </label>
+          <button class="button" type="submit">Email support</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>PrivacyArmy</h2>
+          <p>PrivacyArmy is a specialist storefront for privacy-focused devices and setup services. Availability and supported regions vary by device.</p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <p><a href="mailto:support@example.com">support@example.com</a></p>
+          <p>Accepted coins: BTC, ETH, USDT, XMR</p>
+        </div>
+        <div>
+          <h3>Links</h3>
+          <ul>
+            <li><a href="https://x.com/privacyarmy">X</a></li>
+            <li><a href="https://t.me/privacyarmy">Telegram</a></li>
+            <li><a href="https://github.com/Decipheredmedia/privacyarmy-ru">Github</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="../../assets/app.js" defer></script>
+  </body>
+</html>

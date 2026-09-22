@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <div class="container narrow prose">
+    <p class="eyebrow">{{ post.published_at }}</p>
+    <h1>{{ post.title }}</h1>
+    {% for paragraph in post.body %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

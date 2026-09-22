@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <div class="container narrow">
+    <p class="eyebrow">Blog</p>
+    <h1>PrivacyArmy Journal</h1>
+    <p>Starter editorial scaffolding for SEO-aware buying guides and device explainers.</p>
+    {% for post in posts %}
+    <article class="panel blog-teaser">
+      <p class="eyebrow">{{ post.published_at }}</p>
+      <h2><a href="{{ root_prefix }}blog/{{ post.slug }}/index.html">{{ post.title }}</a></h2>
+      <p>{{ post.excerpt }}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% endblock %}

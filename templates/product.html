@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <div class="container product-layout">
+    <div>
+      <div class="gallery-main">
+        <img src="{{ product.images[0] }}" alt="{{ product.title }} main image">
+      </div>
+      <div class="gallery-grid">
+        {% for image in product.images %}
+        <img src="{{ image }}" alt="{{ product.title }} image {{ loop.index }}" loading="lazy">
+        {% endfor %}
+      </div>
+    </div>
+    <div>
+      <p class="eyebrow">{{ product.category }}</p>
+      <h1>{{ product.title }}</h1>
+      <p class="price">${{ '%.2f'|format(product.price_usd) }}</p>
+      <p class="note">Paid in crypto via NOWPayments hosted checkout.</p>
+      <p>{{ product.description }}</p>
+      <form class="purchase-form" action="/api/create_payment.php" method="post">
+        <input type="hidden" name="product_id" value="{{ product.id }}">
+        <label>
+          Your email
+          <input type="email" name="customer_email" required placeholder="you@example.com">
+        </label>
+        <label>
+          Condition
+          <select name="condition">
+            {% for option in product.condition_options %}
+            <option value="{{ option }}">{{ option }}</option>
+            {% endfor %}
+          </select>
+        </label>
+        <label>
+          Quantity
+          <input type="number" name="quantity" min="1" max="5" value="1" required>
+        </label>
+        <button class="button" type="submit">Buy with Crypto</button>
+      </form>
+      <div class="panel compact-panel">
+        <h2>Fulfillment notes</h2>
+        <ul class="bullet-list">
+          <li>Status: {{ product.stock_status|replace('_', ' ')|title }}</li>
+          <li>Condition options: {{ product.condition_options|join(', ') }}</li>
+          <li>Support: <a href="mailto:{{ site.support_email }}">{{ site.support_email }}</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Related products</h2>
+      <a href="{{ root_prefix }}collections/{{ collection.slug }}/index.html">More in {{ collection.name }}</a>
+    </div>
+    <div class="card-grid">
+      {% for related in related_products %}
+      <article class="card">
+        <img src="{{ related.images[0] }}" alt="{{ related.title }}" loading="lazy">
+        <div class="card-body">
+          <h3><a href="{{ root_prefix }}products/{{ related.slug }}/index.html">{{ related.title }}</a></h3>
+          <p>{{ related.short_description }}</p>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}
