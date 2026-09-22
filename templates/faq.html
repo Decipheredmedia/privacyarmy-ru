@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="section">
+  <div class="container two-column support-layout">
+    <div>
+      <p class="eyebrow">Support</p>
+      <h1>Frequently asked questions</h1>
+      <div class="faq-widget" data-faq-root></div>
+      <script type="application/json" id="faq-data">{{ faq_items_json|safe }}</script>
+    </div>
+    <div>
+      <div class="panel">
+        <h2>Need help?</h2>
+        <p>Use the contact form below to email the support inbox directly.</p>
+        <form action="/support/ticket.php" method="post" class="support-form">
+          <label>
+            Your email
+            <input type="email" name="customer_email" required placeholder="you@example.com">
+          </label>
+          <label>
+            Subject
+            <input type="text" name="subject" required placeholder="Order question">
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="6" required placeholder="How can we help?"></textarea>
+          </label>
+          <button class="button" type="submit">Email support</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

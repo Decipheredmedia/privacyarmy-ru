@@ -1,0 +1,102 @@
+[
+  {
+    "id": "pixel-8-grapheneos",
+    "slug": "pixel-8-grapheneos-edition",
+    "title": "Google Pixel 8 — GrapheneOS Edition",
+    "short_description": "Freshly flashed Pixel 8 with GrapheneOS, OEM unlock review, and verified privacy baseline.",
+    "description": "A ready-to-use Pixel 8 configured for privacy-conscious buyers who want a clean GrapheneOS experience without the setup hassle. Includes baseline hardening, app source guidance, and a post-purchase onboarding checklist.",
+    "price_usd": 899,
+    "images": [
+      "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1580910051074-3eb694886505?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "category": "GrapheneOS Phones",
+    "condition_options": [
+      "New",
+      "Like New"
+    ],
+    "stock_status": "in_stock",
+    "brand": "Google",
+    "faq_excerpt": "Best for buyers who want the most mature GrapheneOS hardware support today."
+  },
+  {
+    "id": "pixel-7a-grapheneos",
+    "slug": "pixel-7a-grapheneos-starter",
+    "title": "Google Pixel 7a — GrapheneOS Starter Build",
+    "short_description": "Lower-cost GrapheneOS device for buyers who want strong privacy without flagship pricing.",
+    "description": "The Pixel 7a Starter Build pairs GrapheneOS installation with a practical starter app set, secure DNS defaults, and setup notes for privacy-preserving messaging, maps, and browsing.",
+    "price_usd": 649,
+    "images": [
+      "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1510557880182-3d4d3cba35a5?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "category": "GrapheneOS Phones",
+    "condition_options": [
+      "New",
+      "Preloved"
+    ],
+    "stock_status": "limited_stock",
+    "brand": "Google",
+    "faq_excerpt": "A balanced option for customers optimizing for value and GrapheneOS support."
+  },
+  {
+    "id": "oneplus-12-rooted",
+    "slug": "oneplus-12-rooted-lab-build",
+    "title": "OnePlus 12 — Rooted Research Build",
+    "short_description": "Rooted Android handset prepared for power users, labs, and testing workflows.",
+    "description": "Built for advanced users who need root access for lab environments, app analysis, or controlled testing. Ships with Magisk, bootloader notes, and practical hardening guidance for reducing avoidable exposure.",
+    "price_usd": 799,
+    "images": [
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1520923642038-b4259acecbd7?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "category": "Rooted Android",
+    "condition_options": [
+      "New",
+      "Like New",
+      "Preloved"
+    ],
+    "stock_status": "in_stock",
+    "brand": "OnePlus",
+    "faq_excerpt": "Designed for buyers who explicitly need root-level experimentation, not mainstream consumers."
+  },
+  {
+    "id": "iphone-13-jailbroken",
+    "slug": "iphone-13-jailbroken-toolkit",
+    "title": "iPhone 13 — Jailbroken Toolkit Edition",
+    "short_description": "Jailbroken iPhone package for researchers, tweak developers, and controlled testing setups.",
+    "description": "A niche offering for expert buyers who need a stable, documented jailbroken iPhone environment. Includes version-specific notes, tweak compatibility guidance, and maintenance expectations for staying on a supported build.",
+    "price_usd": 949,
+    "images": [
+      "https://images.unsplash.com/photo-1512499617640-c74ae3a79d37?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1516728778615-2d590ea1858f?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "category": "Jailbroken iPhone",
+    "condition_options": [
+      "Like New",
+      "Preloved"
+    ],
+    "stock_status": "made_to_order",
+    "brand": "Apple",
+    "faq_excerpt": "Availability is version-dependent because jailbreak support shifts quickly."
+  },
+  {
+    "id": "root-hardening-service",
+    "slug": "android-root-hardening-service",
+    "title": "Android Root & Hardening Service",
+    "short_description": "Mail-in or remote consultation service for customers who need a tailored rooted Android setup.",
+    "description": "For customers bringing their own compatible Android handset, this service covers a root-readiness review, risk discussion, and a practical hardening checklist focused on your device and goals.",
+    "price_usd": 249,
+    "images": [
+      "https://images.unsplash.com/photo-1556656793-08538906a9f8?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+    ],
+    "category": "Privacy Services",
+    "condition_options": [
+      "New"
+    ],
+    "stock_status": "in_stock",
+    "brand": "PrivacyArmy",
+    "faq_excerpt": "Good for customers who already own hardware and want expert setup help."
+  }
+]

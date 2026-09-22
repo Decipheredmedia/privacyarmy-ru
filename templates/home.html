@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Privacy-focused smartphones & services</p>
+      <h1>{{ site.tagline }}</h1>
+      <p>{{ site.collections_intro }}</p>
+      <div class="hero-actions">
+        <a class="button" href="{{ root_prefix }}collections/index.html">Browse collections</a>
+        <a class="button button-secondary" href="{{ root_prefix }}support/faq/index.html">Read FAQ</a>
+      </div>
+    </div>
+    <aside class="panel">
+      <h2>Why PrivacyArmy</h2>
+      <ul class="bullet-list">
+        <li>Data-driven static storefront for low-maintenance publishing</li>
+        <li>Crypto checkout via NOWPayments only</li>
+        <li>Orders, support, and transactional email scaffold included</li>
+      </ul>
+    </aside>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <h2>Featured privacy builds</h2>
+      <a href="{{ root_prefix }}collections/index.html">See all collections</a>
+    </div>
+    <div class="card-grid">
+      {% for product in featured_products %}
+      <article class="card">
+        <img src="{{ product.images[0] }}" alt="{{ product.title }}" loading="lazy">
+        <div class="card-body">
+          <p class="eyebrow">{{ product.category }}</p>
+          <h3><a href="{{ root_prefix }}products/{{ product.slug }}/index.html">{{ product.title }}</a></h3>
+          <p>{{ product.short_description }}</p>
+          <div class="card-meta">
+            <strong>${{ '%.2f'|format(product.price_usd) }}</strong>
+            <span>{{ product.stock_status|replace('_', ' ')|title }}</span>
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+<section class="section section-alt">
+  <div class="container two-column">
+    <div>
+      <h2>Collections</h2>
+      <ul class="collection-list">
+        {% for collection in collections %}
+        <li><a href="{{ root_prefix }}collections/{{ collection.slug }}/index.html">{{ collection.name }}</a> <span>{{ collection.products|length }} items</span></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <h2>Latest from the blog</h2>
+      <article class="panel">
+        <p class="eyebrow">{{ blog_post.published_at }}</p>
+        <h3><a href="{{ root_prefix }}blog/{{ blog_post.slug }}/index.html">{{ blog_post.title }}</a></h3>
+        <p>{{ blog_post.excerpt }}</p>
+      </article>
+    </div>
+  </div>
+</section>
+{% endblock %}

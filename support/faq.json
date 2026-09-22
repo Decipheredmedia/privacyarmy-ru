@@ -1,0 +1,18 @@
+[
+  {
+    "question": "How does checkout work?",
+    "answer": "PrivacyArmy uses NOWPayments hosted crypto checkout only. You choose a product, enter your email, and get redirected to a secure crypto invoice page."
+  },
+  {
+    "question": "Do you accept fiat cards or PayPal?",
+    "answer": "No. This scaffold is intentionally crypto-only and routes payment through NOWPayments without Stripe, PayPal, or other processors."
+  },
+  {
+    "question": "What happens after payment confirmation?",
+    "answer": "The order is updated by the NOWPayments IPN callback, the customer receives a confirmation email, and the admin gets a fulfillment notice."
+  },
+  {
+    "question": "Can I request a custom device hardening package?",
+    "answer": "Yes. Use the support form to outline your device model, goals, and region, and PrivacyArmy can scope a custom engagement."
+  }
+]

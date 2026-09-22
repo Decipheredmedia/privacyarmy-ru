@@ -1,0 +1,31 @@
+{
+  "brand_name": "PrivacyArmy",
+  "domain": "privacyarmy.example.com",
+  "tagline": "Privacy-first smartphones and hardening services paid in crypto.",
+  "contact_email": "support@example.com",
+  "support_email": "support@example.com",
+  "currencies_accepted": [
+    "BTC",
+    "ETH",
+    "USDT",
+    "XMR"
+  ],
+  "social_links": {
+    "x": "https://x.com/privacyarmy",
+    "telegram": "https://t.me/privacyarmy",
+    "github": "https://github.com/Decipheredmedia/privacyarmy-ru"
+  },
+  "default_meta_description": "PrivacyArmy offers privacy-focused smartphones, rooted and jailbroken devices, and device-hardening services with crypto checkout via NOWPayments.",
+  "brand": {
+    "name": "PrivacyArmy",
+    "logo": "/assets/privacyarmy-logo.svg"
+  },
+  "shipping_regions": [
+    "United States",
+    "European Union",
+    "United Kingdom",
+    "Canada"
+  ],
+  "collections_intro": "Curated devices and services for privacy enthusiasts who want a tighter mobile threat model.",
+  "footer_notice": "PrivacyArmy is a specialist storefront for privacy-focused devices and setup services. Availability and supported regions vary by device."
+}
