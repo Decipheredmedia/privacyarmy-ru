@@ -20,7 +20,10 @@ document.addEventListener('DOMContentLoaded', function () {
         if (index !== 0) {
           answer.hidden = true;
         }
-        answer.innerHTML = `<p>${item.answer}</p>`;
+
+        const answerParagraph = document.createElement('p');
+        answerParagraph.textContent = item.answer;
+        answer.appendChild(answerParagraph);
 
         button.addEventListener('click', () => {
           const expanded = button.getAttribute('aria-expanded') === 'true';
